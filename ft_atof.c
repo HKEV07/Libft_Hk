@@ -61,7 +61,7 @@ double	ft_atof(const char *str)
 	if (!ft_isdigit(str[i]))
 		ft_error(1);
 	s = pl_m(str, i);
-	if (-2 < (s * c) && (s * c) < 2)
+	if (-2.0 < (s * c) && (s * c) < 2.0)
 		return (s * c);
 	else
 		ft_error(1);
